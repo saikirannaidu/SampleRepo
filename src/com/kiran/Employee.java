@@ -3,6 +3,7 @@ package com.kiran;
 public class Employee {
 private int empId;
 private String empName;
+private String loc;
 public Employee() {
 	super();
 }
@@ -18,9 +19,16 @@ public String getEmpName() {
 public void setEmpName(String empName) {
 	this.empName = empName;
 }
+public String getLoc() {
+	return loc;
+}
+public void setLoc(String loc) {
+	this.loc = loc;
+}
 @Override
 public String toString() {
-	return "Employee [empId=" + empId + ", empName=" + empName + "]";
+	return "Employee [empId=" + empId + ", empName=" + empName + ", loc=" + loc
+			+ "]";
 }
 
 }
